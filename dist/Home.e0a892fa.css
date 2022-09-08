@@ -1,0 +1,1099 @@
+@import "https://fonts.googleapis.com/css2?family=Space+Mono&family=Trispace:wght@200&display=swap";
+.home-bg {
+  background: url("background-home-desktop.79442218.jpg") center / cover no-repeat fixed;
+}
+
+.container-home {
+  grid-template-columns: repeat(2, 1fr);
+  margin: 200px;
+  font-family: Space Mono, monospace;
+  display: grid;
+}
+
+.container-home h1 {
+  color: #a3a3a8;
+  text-transform: uppercase;
+  font-family: Trispace, sans-serif;
+  font-size: 150px;
+  font-weight: 200;
+}
+
+.container-home h2, .container-home h3 {
+  color: #aaafcc;
+  margin: 20px;
+}
+
+.container-home h2 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.container-home h3 {
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.container-home .text {
+  max-width: 550px;
+}
+
+.container-home .explore {
+  color: #000;
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 500vh;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 0 250px;
+  font-family: Trispace, sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .home-bg {
+    background: url("background-home-tablet.4a6e1410.jpg") center / cover no-repeat fixed;
+  }
+
+  .header .nav {
+    display: none;
+  }
+
+  .container-home {
+    margin: auto;
+    font-family: Space Mono, monospace;
+    display: block !important;
+  }
+
+  .container-home .text {
+    text-align: center;
+    max-width: auto;
+    margin: auto;
+  }
+
+  .container-home .explore {
+    text-transform: uppercase;
+    color: #000;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 500vh;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-bg {
+    background: url("background-home-mobile.bc71794e.jpg") center / cover no-repeat fixed;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .container-home {
+    text-align: center;
+    margin: auto;
+    font-family: Space Mono, monospace;
+    display: block !important;
+  }
+
+  .container-home h1 {
+    color: #a3a3a8;
+    text-transform: uppercase;
+    margin: auto;
+    font-family: Trispace, sans-serif;
+    font-size: 120px;
+    font-weight: 200;
+  }
+
+  .container-home h2, .container-home h3 {
+    color: #aaafcc;
+    margin: 20px;
+  }
+
+  .container-home h2 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .container-home h3 {
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .container-home .text {
+    text-align: center;
+    max-width: auto;
+    margin: auto;
+  }
+
+  .container-home .explore {
+    color: #000;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 500vh;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    display: flex;
+  }
+}
+
+.header {
+  width: auto;
+  color: #fff;
+  justify-content: space-between;
+  margin-top: 30px;
+  display: flex;
+}
+
+.header img {
+  margin: 30px;
+}
+
+.header .nav {
+  width: auto;
+  -webkit-backdrop-filter: auto;
+  backdrop-filter: auto;
+  -webkit-backdrop-filter: blur(80px);
+  background: #ffffff0d;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 170px;
+  display: flex;
+}
+
+.header .nav ul {
+  gap: 50px;
+  list-style: none;
+  display: flex;
+}
+
+.header .nav ul li {
+  padding: 20px 10px;
+}
+
+.header .nav ul li:hover {
+  transition: all .5 ease-out;
+  border-bottom: 2px solid #aaafcc;
+}
+
+.header .nav ul a {
+  text-decoration: none;
+  color: #a3a3a8 !important;
+  cursor: pointer !important;
+}
+
+.active {
+  border-bottom: 2px solid #fff;
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    width: 50px;
+    z-index: 10;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 50px !important;
+  }
+
+  .nav ul {
+    width: auto;
+    height: 100vh;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+  }
+
+  .nav ul li {
+    width: 100%;
+  }
+
+  .menu-btn {
+    width: 30px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    transition: all .5s ease-in-out;
+    display: flex;
+    position: relative;
+  }
+
+  .menu-btn__burger {
+    width: 30px;
+    height: 2px;
+    z-index: 15;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+  }
+
+  .menu-btn__burger:before, .menu-btn__burger:after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    position: absolute;
+  }
+
+  .menu-btn__burger:before {
+    transform: translateY(-10px);
+  }
+
+  .menu-btn__burger:after {
+    transform: translateY(10px);
+  }
+
+  .menu-btn.open .menu-btn__burger {
+    background: none;
+    transform: translateX(-20px);
+  }
+
+  .menu-btn.open .menu-btn__burger:before {
+    transform: rotate(45deg)translate(10px, -10px);
+  }
+
+  .menu-btn.open .menu-btn__burger:after {
+    transform: rotate(-45deg)translate(10px, 10px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav {
+    -webkit-backdrop-filter: blur(80px);
+    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(80px);
+    width: 60px;
+    z-index: 10;
+    background: #ffffff0d;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 50px !important;
+  }
+
+  .nav ul {
+    width: auto;
+    height: 100vh;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+  }
+
+  .nav ul li {
+    width: 100%;
+  }
+
+  .menu-btn {
+    width: 30px;
+    height: 20px;
+    z-index: 50;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 30px;
+    transition: all .5s ease-in-out;
+    display: flex;
+    position: relative;
+  }
+
+  .menu-btn__burger {
+    width: 30px;
+    height: 2px;
+    z-index: 50;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+  }
+
+  .menu-btn__burger:before, .menu-btn__burger:after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    position: absolute;
+  }
+
+  .menu-btn__burger:before {
+    transform: translateY(-10px);
+  }
+
+  .menu-btn__burger:after {
+    transform: translateY(10px);
+  }
+
+  .menu-btn.open .menu-btn__burger {
+    background: none;
+    transform: translateX(-20px);
+  }
+
+  .menu-btn.open .menu-btn__burger:before {
+    transform: rotate(45deg)translate(10px, -10px);
+  }
+
+  .menu-btn.open .menu-btn__burger:after {
+    transform: rotate(-45deg)translate(10px, 10px);
+  }
+}
+
+.dest-bg {
+  background: url("background-destination-desktop.5d094bd8.jpg") center / cover no-repeat fixed;
+}
+
+.container-dest {
+  width: auto;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 200px;
+  font-family: Space Mono, monospace;
+  display: grid;
+}
+
+.choose {
+  color: #aaafcc;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.choose .one {
+  color: #a3a3a8;
+  margin: 20px;
+}
+
+.choose .imgPlanet {
+  width: 500px;
+  height: 500px;
+  z-index: 5;
+  background: url("image-moon.ce4d7e99.png") no-repeat;
+  margin: 20px 0 0 -60px;
+  top: 50%;
+  left: 20%;
+  background-size: cover !important;
+}
+
+.choosePlanet button {
+  text-transform: uppercase;
+  color: #a3a3a8;
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin: 15px;
+  font-size: 18px;
+}
+
+.planet__active {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #fff !important;
+}
+
+.choosePlanet button:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #a3a3a8 !important;
+}
+
+.text hr {
+  width: 90%;
+}
+
+.text h1 {
+  color: #a3a3a8;
+  text-transform: uppercase;
+  margin-left: 15px;
+  font-family: Trispace, sans-serif;
+  font-size: 120px;
+}
+
+.text .planetDesc {
+  color: #aaafcc;
+  width: 85%;
+  margin: 5px 20px 30px 15px;
+}
+
+.text .distance {
+  color: #aaafcc;
+  justify-content: space-around;
+  margin: 20px 0;
+  display: flex;
+}
+
+.text .avg {
+  margin-left: -50px;
+}
+
+.text .title {
+  color: #a3a3a8;
+  font-family: Trispace, sans-serif;
+}
+
+.text .value {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 900px) {
+  .dest-bg {
+    background: url("background-destination-tablet.f33e04dc.jpg") center / cover no-repeat fixed;
+  }
+
+  .header .nav {
+    display: none;
+  }
+
+  .container-dest {
+    margin: auto;
+    font-family: Space Mono, monospace;
+    display: block !important;
+  }
+
+  .container-dest .imgPlanet {
+    background-size: 80%;
+    margin: 50px auto;
+    display: block;
+  }
+
+  .container-dest .choose {
+    text-align: center;
+    padding: 0;
+    display: block;
+  }
+
+  .container-dest .choosePlanet {
+    text-align: center;
+  }
+
+  .container-dest .choosePlanet button {
+    text-transform: uppercase;
+    color: #a3a3a8;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin: 15px;
+    font-size: 18px;
+  }
+
+  .container-dest .text, .container-dest h1, .container-dest .planetDesc {
+    text-align: center;
+    margin: auto;
+  }
+
+  .container-dest hr {
+    margin: 30px auto;
+  }
+
+  .container-dest .distance {
+    text-align: center;
+    margin: auto;
+    display: block;
+  }
+
+  .container-dest .avg {
+    margin: 0 0 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dest-bg {
+    background: url("background-destination-mobile.7df7e06c.jpg") center / cover no-repeat fixed;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .container-dest {
+    margin: auto;
+    font-family: Space Mono, monospace;
+    display: block !important;
+  }
+
+  .container-dest .imgPlanet {
+    background-position-x: 50%;
+    margin-left: 50px auto !important;
+    background-size: 90% !important;
+  }
+
+  .container-dest .choose {
+    text-align: center;
+    padding: 0;
+    display: block;
+  }
+
+  .container-dest .choosePlanet {
+    text-align: center;
+  }
+
+  .container-dest .choosePlanet button {
+    text-transform: uppercase;
+    color: #a3a3a8;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin: 15px;
+    font-size: 18px;
+  }
+
+  .container-dest .text, .container-dest h1, .container-dest .planetDesc {
+    text-align: center;
+    margin: auto;
+  }
+
+  .container-dest hr {
+    margin: 30px auto;
+  }
+
+  .container-dest .distance {
+    text-align: center;
+    margin: auto;
+    display: block;
+  }
+
+  .container-dest .avg {
+    margin: 0 0 20px;
+  }
+}
+
+.crew-bg {
+  background: url("background-crew-desktop.c3ec3884.jpg") center / cover no-repeat fixed;
+}
+
+.container-crew {
+  margin: 200px 0 0 100px;
+  padding: 0;
+  font-family: Space Mono, monospace;
+}
+
+.container-crew h3 {
+  color: #aaafcc;
+  text-transform: uppercase;
+  margin: 200px 0;
+  font-size: 25px;
+}
+
+.container-crew h3 .two {
+  color: #a3a3a8;
+}
+
+.container-crew h2 {
+  color: #aaafcc;
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+.container-crew h1 {
+  color: #a3a3a8;
+  text-transform: uppercase;
+  margin: 5px 25px 30px 5px;
+  font-family: Trispace, sans-serif;
+  font-size: 60px;
+}
+
+.container-crew h4 {
+  color: #aaafcc;
+  width: 40%;
+  font-size: 23px;
+  font-weight: 100;
+}
+
+.container-crew .btnPagination {
+  width: 50%;
+  margin: 80px 0;
+}
+
+.container-crew .btnPagination button {
+  width: 20px;
+  height: 20px;
+  background-color: #a3a3a8;
+  border: 0;
+  border-radius: 50vh;
+  margin: 0 10px;
+}
+
+.container-crew .btnPagination .active--pag {
+  background-color: #fff;
+}
+
+.container-crew .imgPeople {
+  width: 500px;
+  height: 700px;
+  background: url("image-douglas-hurley.c950165c.png") no-repeat;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-size: cover !important;
+}
+
+@media screen and (max-width: 900px) {
+  .crew-bg {
+    background: url("background-crew-tablet.76b1bec7.jpg") center / cover no-repeat fixed;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .container-crew {
+    margin: 0 !important;
+    display: block !important;
+  }
+
+  .container-crew h3 {
+    text-align: center;
+    color: #aaafcc;
+    text-transform: uppercase;
+    margin: 10px;
+    font-size: 25px;
+  }
+
+  .container-crew h3 .two {
+    color: #a3a3a8;
+  }
+
+  .container-crew h2 {
+    text-align: center;
+    color: #aaafcc;
+    text-transform: uppercase;
+    margin: 10px;
+    font-size: 32px;
+    position: relative;
+  }
+
+  .container-crew h1 {
+    text-align: center;
+    color: #a3a3a8;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: Trispace, sans-serif;
+    font-size: 60px;
+    position: relative;
+  }
+
+  .container-crew h4 {
+    text-align: center;
+    color: #aaafcc;
+    width: 80%;
+    margin: 15px auto;
+    font-size: 15px;
+    font-weight: 100;
+  }
+
+  .btnPagination {
+    text-align: center;
+    width: 20%;
+    margin: 15px auto !important;
+  }
+
+  .btnPagination button {
+    background-color: #a3a3a8;
+    border: 0;
+    border-radius: 50vh;
+    margin: 0 10px;
+    width: 15px !important;
+    height: 15px !important;
+  }
+
+  .btnPagination .active--pag {
+    background-color: #fff;
+  }
+
+  .imgPeople {
+    bottom: 0;
+    position: absolute !important;
+    left: 50% !important;
+    transform: translate(-50%) !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .crew-bg {
+    background: url("background-crew-mobile.4c77f763.jpg") center / cover no-repeat fixed;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .container-crew {
+    margin: 0;
+    display: block !important;
+  }
+
+  .container-crew h3 {
+    color: #aaafcc;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .container-crew h3 .two {
+    color: #a3a3a8;
+  }
+
+  .container-crew h2 {
+    color: #aaafcc;
+    text-transform: uppercase;
+    font-size: 27px;
+  }
+
+  .container-crew h1 {
+    color: #a3a3a8;
+    text-transform: uppercase;
+    font-family: Trispace, sans-serif;
+    font-size: 50px;
+  }
+
+  .container-crew h4 {
+    color: #aaafcc;
+    width: 90%;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .container-crew .btnPagination {
+    width: 50%;
+  }
+
+  .container-crew .btnPagination button {
+    width: 20px;
+    height: 20px;
+    background-color: #a3a3a8;
+    border: 0;
+    border-radius: 50vh;
+    margin: 0 5px;
+  }
+
+  .container-crew .btnPagination .active--pag {
+    background-color: #fff;
+  }
+
+  .container-crew .imgPeople {
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    position: absolute !important;
+    left: 50% !important;
+    transform: translate(-50%) !important;
+  }
+}
+
+.tech-bg {
+  background: url("background-technology-desktop.9a9e4b07.jpg") center / cover no-repeat fixed;
+}
+
+h3 {
+  color: #aaafcc;
+  text-transform: uppercase;
+  margin: 150px 50px;
+}
+
+h3 .three {
+  color: #a3a3a8;
+}
+
+.main {
+  color: #fff;
+  grid-template-columns: repeat(3, auto);
+  display: grid;
+}
+
+.container-tech {
+  width: auto;
+  margin: 200px;
+  font-family: Space Mono, monospace;
+  display: block;
+}
+
+.container-tech .buttons-pag button {
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 50vh;
+  margin: 20px 0;
+  font-size: 30px;
+  display: block;
+}
+
+.container-tech .buttons-pag button:hover {
+  color: #000;
+  background-color: #a3a3a8;
+  border-color: #a3a3a8;
+}
+
+.container-tech .active__pag {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+.container-tech h4 {
+  text-transform: uppercase;
+  color: #aaafcc;
+  font-family: Trispace, sans-serif;
+}
+
+.container-tech h1 {
+  color: #a3a3a8;
+  text-transform: uppercase;
+  margin: 15px 0;
+  font-family: Trispace, sans-serif;
+  font-size: 45px;
+}
+
+.container-tech p {
+  color: #aaafcc;
+  width: 58%;
+  font-family: Space Mono, monospace;
+  line-height: 30px;
+}
+
+.container-tech .description {
+  margin: 10px 10px 10px 20px;
+}
+
+.container-tech .imgRocket {
+  z-index: 5;
+  width: 440px;
+  height: 480px;
+  background: url("image-launch-vehicle-portrait.97ec87cc.jpg") 0 0 / cover no-repeat;
+  margin-right: 10px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 900px) {
+  .tech-bg {
+    background: url("background-technology-tablet.66f36f45.jpg") center / cover no-repeat fixed;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  h3 {
+    color: #aaafcc;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  h3 .three {
+    color: #a3a3a8;
+  }
+
+  .main {
+    color: #fff;
+    display: block;
+  }
+
+  .container-tech {
+    width: auto;
+    text-align: center;
+    margin: 0;
+    font-family: Space Mono, monospace;
+    display: block;
+  }
+
+  .container-tech .buttons-pag button {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 50vh;
+    margin: 280px auto 50px;
+    font-size: 30px;
+    display: inline;
+  }
+
+  .container-tech .buttons-pag button:hover {
+    color: #000;
+    background-color: #a3a3a8;
+    border-color: #a3a3a8;
+  }
+
+  .container-tech .active__pag {
+    color: #000 !important;
+    background-color: #fff !important;
+  }
+
+  .container-tech h4 {
+    text-transform: uppercase;
+    color: #aaafcc;
+    text-align: center;
+    margin-top: 0;
+    font-family: Trispace, sans-serif;
+  }
+
+  .container-tech h1 {
+    color: #a3a3a8;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 25px auto;
+    font-family: Trispace, sans-serif;
+    font-size: 45px;
+  }
+
+  .container-tech p {
+    color: #aaafcc;
+    width: 75%;
+    text-align: center;
+    font-family: Space Mono, monospace;
+    line-height: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .container-tech .description {
+    margin: 0;
+  }
+
+  .container-tech .imgRocket {
+    z-index: 5;
+    width: 90%;
+    height: 20%;
+    background: url("image-launch-vehicle-landscape.6fddb326.jpg") 0 0 / cover no-repeat;
+    margin: 0;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tech-bg {
+    background: url("background-technology-tablet.66f36f45.jpg") center / cover no-repeat fixed;
+  }
+
+  .header .nav {
+    display: none;
+  }
+
+  h3 {
+    color: #aaafcc;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  h3 .three {
+    color: #a3a3a8;
+  }
+
+  .main {
+    color: #fff;
+    display: block;
+  }
+
+  .container-tech {
+    width: auto;
+    text-align: center;
+    margin: 0;
+    font-family: Space Mono, monospace;
+    display: block;
+  }
+
+  .container-tech .buttons-pag button {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 50vh;
+    margin: 350px auto 50px;
+    font-size: 30px;
+    display: inline;
+  }
+
+  .container-tech .buttons-pag button:hover {
+    color: #000;
+    background-color: #a3a3a8;
+    border-color: #a3a3a8;
+  }
+
+  .container-tech .active__pag {
+    color: #000 !important;
+    background-color: #fff !important;
+  }
+
+  .container-tech h4 {
+    text-transform: uppercase;
+    color: #aaafcc;
+    text-align: center;
+    margin-top: 0;
+    font-family: Trispace, sans-serif;
+  }
+
+  .container-tech h1 {
+    color: #a3a3a8;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 25px auto;
+    font-family: Trispace, sans-serif;
+    font-size: 45px;
+  }
+
+  .container-tech p {
+    color: #aaafcc;
+    width: 75%;
+    text-align: center;
+    font-family: Space Mono, monospace;
+    line-height: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .container-tech .description {
+    margin: 0;
+  }
+
+  .container-tech .imgRocket {
+    z-index: 5;
+    width: 90%;
+    height: 300px;
+    background: url("image-launch-vehicle-landscape.6fddb326.jpg") center / cover no-repeat fixed;
+    margin: 0;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=Home.e0a892fa.css.map */

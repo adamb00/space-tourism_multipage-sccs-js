@@ -1,0 +1,24 @@
+{
+  "name": "space-tourism-website-main",
+  "version": "1.0.0",
+  "description": "Multi page website about the space tourism",
+  "default": "home.html",
+  "scripts": {
+    "start": "parcel ../html/Home.html",
+    "build": "parcel build home.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamb00/space-tourism_multipage-sccs-js.git"
+  },
+  "author": "adamb00",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamb00/space-tourism_multipage-sccs-js/issues"
+  },
+  "homepage": "https://github.com/adamb00/space-tourism_multipage-sccs-js#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "parcel": "^2.7.0"
+  }
+}
