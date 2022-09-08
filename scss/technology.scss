@@ -1,0 +1,264 @@
+@import './colors.scss';
+
+.tech-bg {
+  background: url(../assets/technology/background-technology-desktop.jpg)
+    no-repeat center center fixed;
+  background-size: cover;
+}
+h3 {
+  color: $color-fontColor;
+  margin: 150px 50px;
+  text-transform: uppercase;
+  .three {
+    color: $color-fontColor-h1;
+  }
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  color: white;
+}
+.container-tech {
+  display: block;
+  font-family: 'Space Mono', monospace;
+  width: auto;
+  margin: 200px;
+
+  .buttons-pag button {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50vh;
+    border: 1px solid white;
+    background: transparent;
+    margin: 20px 0;
+    color: white;
+    font-size: 30px;
+  }
+  .buttons-pag button:hover {
+    background-color: $color-fontColor-h1;
+    color: black;
+    border-color: $color-fontColor-h1;
+  }
+  .active__pag {
+    background-color: white !important;
+    color: black !important;
+  }
+  h4 {
+    text-transform: uppercase;
+    color: $color-fontColor;
+    font-family: 'Trispace', sans-serif;
+  }
+  h1 {
+    color: $color-fontColor-h1;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-family: 'Trispace', sans-serif;
+    margin: 15px 0;
+  }
+  p {
+    color: $color-fontColor;
+    font-family: 'Space Mono', monospace;
+    line-height: 30px;
+    width: 58%;
+  }
+  .description {
+    margin: 10px 10px 10px 20px;
+  }
+  .imgRocket {
+    background: url('../assets/technology/image-launch-vehicle-portrait.jpg')
+      no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 440px;
+    height: 480px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .tech-bg {
+    background: url(/assets/technology/background-technology-tablet.jpg)
+      no-repeat center center fixed;
+    background-size: cover;
+  }
+  .nav {
+    display: none;
+  }
+  h3 {
+    color: $color-fontColor;
+    margin: 0;
+    text-transform: uppercase;
+    .three {
+      color: $color-fontColor-h1;
+    }
+  }
+  .main {
+    display: block;
+    color: white;
+  }
+  .container-tech {
+    display: block;
+    font-family: 'Space Mono', monospace;
+    width: auto;
+    margin: 0;
+    text-align: center;
+
+    .buttons-pag button {
+      text-align: center;
+      display: inline;
+      width: 50px;
+      height: 50px;
+      border-radius: 50vh;
+      border: 1px solid white;
+      background: transparent;
+      margin: 280px auto 50px auto;
+      color: white;
+      font-size: 30px;
+    }
+    .buttons-pag button:hover {
+      background-color: $color-fontColor-h1;
+      color: black;
+      border-color: $color-fontColor-h1;
+    }
+    .active__pag {
+      background-color: white !important;
+      color: black !important;
+    }
+    h4 {
+      text-transform: uppercase;
+      color: $color-fontColor;
+      font-family: 'Trispace', sans-serif;
+      text-align: center;
+      margin-top: 0px;
+    }
+    h1 {
+      color: $color-fontColor-h1;
+      text-transform: uppercase;
+      font-size: 45px;
+      font-family: 'Trispace', sans-serif;
+      margin: 25px auto;
+      text-align: center;
+    }
+    p {
+      color: $color-fontColor;
+      font-family: 'Space Mono', monospace;
+      line-height: 30px;
+      width: 75%;
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .description {
+      margin: 0px;
+    }
+    .imgRocket {
+      margin: 0;
+      background: url('../assets/technology/image-launch-vehicle-landscape.jpg')
+        no-repeat;
+      background-size: cover;
+      z-index: 5;
+      width: 90%;
+      height: 20%;
+      left: 50%;
+      top: 15%;
+      transform: translateX(-50%);
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .tech-bg {
+    background: url(/assets/technology/background-technology-tablet.jpg)
+      no-repeat center center fixed;
+    background-size: cover;
+  }
+  .header .nav {
+    display: none;
+  }
+  h3 {
+    color: $color-fontColor;
+    margin: 0;
+    text-transform: uppercase;
+    .three {
+      color: $color-fontColor-h1;
+    }
+  }
+  .main {
+    display: block;
+    color: white;
+  }
+  .container-tech {
+    display: block;
+    font-family: 'Space Mono', monospace;
+    width: auto;
+    margin: 0;
+    text-align: center;
+
+    .buttons-pag button {
+      text-align: center;
+      display: inline;
+      width: 50px;
+      height: 50px;
+      border-radius: 50vh;
+      border: 1px solid white;
+      background: transparent;
+      margin: 350px auto 50px auto;
+      color: white;
+      font-size: 30px;
+    }
+    .buttons-pag button:hover {
+      background-color: $color-fontColor-h1;
+      color: black;
+      border-color: $color-fontColor-h1;
+    }
+    .active__pag {
+      background-color: white !important;
+      color: black !important;
+    }
+    h4 {
+      text-transform: uppercase;
+      color: $color-fontColor;
+      font-family: 'Trispace', sans-serif;
+      text-align: center;
+      margin-top: 0px;
+    }
+    h1 {
+      color: $color-fontColor-h1;
+      text-transform: uppercase;
+      font-size: 45px;
+      font-family: 'Trispace', sans-serif;
+      margin: 25px auto;
+      text-align: center;
+    }
+    p {
+      color: $color-fontColor;
+      font-family: 'Space Mono', monospace;
+      line-height: 30px;
+      width: 75%;
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .description {
+      margin: 0px;
+    }
+    .imgRocket {
+      margin: 0;
+      background: url('../assets/technology/image-launch-vehicle-landscape.jpg')
+        no-repeat center center fixed;
+      background-size: cover;
+      z-index: 5;
+      width: 90%;
+      height: 300px;
+      left: 50%;
+      top: 15%;
+      transform: translateX(-50%);
+    }
+  }
+}

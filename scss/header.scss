@@ -1,0 +1,187 @@
+@import './colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Trispace:wght@200&display=swap');
+
+.header {
+  img {
+    margin: 30px;
+  }
+  margin-top: 30px;
+  width: auto;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  .nav {
+    padding: 0px 170px;
+    display: flex;
+    width: auto;
+    background: $header--bg-color;
+    backdrop-filter: auto;
+    -webkit-backdrop-filter: blur(80px);
+    align-items: center;
+    justify-content: space-around;
+
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 50px;
+
+      li {
+        padding: 20px 10px;
+      }
+      li:hover {
+        border-bottom: 2px solid $color-fontColor;
+        transition: all 0.5 ease-out;
+      }
+      a {
+        color: $color-fontColor-h1 !important;
+        text-decoration: none;
+        cursor: pointer !important;
+      }
+    }
+  }
+}
+.active {
+  border-bottom: 2px solid white;
+}
+.menu-btn {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .nav {
+    display: none;
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 50px;
+    padding: 50px !important;
+    z-index: 10;
+    ul {
+      flex-direction: column;
+      display: flex;
+      width: auto;
+      height: 100vh;
+      position: relative;
+      gap: 0;
+      margin-top: 50px;
+      li {
+        width: 100%;
+      }
+    }
+  }
+  .menu-btn {
+    margin: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    width: 30px;
+    height: 20px;
+  }
+  .menu-btn__burger {
+    width: 30px;
+    height: 2px;
+    background: white;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    z-index: 15;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: white;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-10px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(10px);
+  }
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-20px);
+    background: transparent;
+  }
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(10px, -10px);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(10px, 10px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav {
+    background: $header--bg-color;
+    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(80px);
+    display: none;
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 60px;
+    padding: 50px !important;
+    z-index: 10;
+    ul {
+      flex-direction: column;
+      display: flex;
+      width: auto;
+      height: 100vh;
+      position: relative;
+      gap: 0;
+      margin-top: 50px;
+      li {
+        width: 100%;
+      }
+    }
+  }
+  .menu-btn {
+    margin: 40px 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    width: 30px;
+    height: 20px;
+    z-index: 50;
+  }
+  .menu-btn__burger {
+    width: 30px;
+    height: 2px;
+    background: white;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    z-index: 50;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: white;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-10px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(10px);
+  }
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-20px);
+    background: transparent;
+  }
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(10px, -10px);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(10px, 10px);
+  }
+}

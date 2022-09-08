@@ -1,0 +1,150 @@
+@import './colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Trispace:wght@200&display=swap');
+
+.home-bg {
+  background: url(/assets/home/background-home-desktop.jpg) no-repeat center
+    center fixed;
+  background-size: cover;
+}
+.container-home {
+  font-family: 'Space Mono', monospace;
+  margin: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  h1 {
+    color: $color-fontColor-h1;
+    font-size: 150px;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-family: 'Trispace', sans-serif;
+  }
+  h2,
+  h3 {
+    color: $color-fontColor;
+    margin: 20px;
+  }
+  h2 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+  .text {
+    max-width: 550px;
+  }
+  .explore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 500vh;
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    margin: 100px 0 0 250px;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'Trispace', sans-serif;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home-bg {
+    background: url(/assets/home/background-home-tablet.jpg) no-repeat center
+      center fixed;
+    background-size: cover;
+  }
+  .header .nav {
+    display: none;
+  }
+  .container-home {
+    font-family: 'Space Mono', monospace;
+    display: block !important ;
+    margin: auto;
+
+    .text {
+      margin: auto;
+      text-align: center;
+      max-width: auto;
+    }
+
+    .explore {
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      border-radius: 500vh;
+      background-color: #fff;
+      width: 200px;
+      height: 200px;
+      margin: 100px auto;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-bg {
+    background: url(/assets/home/background-home-mobile.jpg) no-repeat center
+      center fixed;
+    background-size: cover;
+  }
+  .nav {
+    display: none;
+  }
+  .container-home {
+    font-family: 'Space Mono', monospace;
+    margin: auto;
+    display: block !important;
+    text-align: center;
+
+    h1 {
+      margin: auto;
+      color: $color-fontColor-h1;
+      font-size: 120px;
+      font-weight: 200;
+      text-transform: uppercase;
+      font-family: 'Trispace', sans-serif;
+    }
+    h2,
+    h3 {
+      color: $color-fontColor;
+      margin: 20px;
+    }
+    h2 {
+      margin: auto;
+      font-size: 22px;
+      letter-spacing: 3px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-size: 15px;
+      letter-spacing: 2px;
+      font-weight: 300;
+    }
+    .text {
+      margin: auto;
+      text-align: center;
+      max-width: auto;
+    }
+
+    .explore {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      border-radius: 500vh;
+      background-color: #fff;
+      width: 200px;
+      height: 200px;
+      margin: 50px auto;
+    }
+  }
+}

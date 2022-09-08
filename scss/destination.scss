@@ -1,0 +1,213 @@
+@import './colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Trispace:wght@200&display=swap');
+
+.dest-bg {
+  background: url(../assets/destination/background-destination-desktop.jpg)
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container-dest {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: 'Space Mono', monospace;
+  width: auto;
+  margin: 200px;
+}
+
+.choose {
+  color: $color-fontColor;
+  text-transform: uppercase;
+  font-size: 20px;
+  .one {
+    margin: 20px;
+    color: $color-fontColor-h1;
+  }
+  .imgPlanet {
+    margin: 20px 0 0 -60px;
+    background: url('../assets/destination/image-moon.png') no-repeat;
+    background-size: cover !important;
+    top: 50%;
+    left: 20%;
+    width: 500px;
+    height: 500px;
+    z-index: 5;
+  }
+}
+.choosePlanet button {
+  text-transform: uppercase;
+  color: $color-fontColor-h1;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.planet__active {
+  padding-bottom: 5px;
+  border-bottom: 2px solid white !important;
+}
+.choosePlanet button:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid $color-fontColor-h1 !important;
+}
+.text {
+  hr {
+    width: 90%;
+  }
+  h1 {
+    font-size: 120px;
+    margin-left: 15px;
+    font-family: 'Trispace', sans-serif;
+    color: $color-fontColor-h1;
+    text-transform: uppercase;
+  }
+  .planetDesc {
+    color: $color-fontColor;
+    margin: 5px 20px 30px 15px;
+    width: 85%;
+  }
+  .distance {
+    color: $color-fontColor;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  .avg {
+    margin-left: -50px;
+  }
+  .title {
+    color: $color-fontColor-h1;
+    font-family: 'Trispace', sans-serif;
+  }
+  .value {
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .dest-bg {
+    background: url(/assets/destination/background-destination-tablet.jpg)
+      no-repeat center center fixed;
+    background-size: cover;
+  }
+  .header .nav {
+    display: none;
+  }
+  .container-dest {
+    font-family: 'Space Mono', monospace;
+    display: block !important;
+    margin: auto;
+    .imgPlanet {
+      display: block;
+      margin: 50px auto;
+      background-size: 80%;
+    }
+    .choose {
+      display: block;
+      text-align: center;
+      padding: 0;
+    }
+    .choosePlanet {
+      text-align: center;
+    }
+    .choosePlanet button {
+      text-transform: uppercase;
+      color: $color-fontColor-h1;
+      background: transparent;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      margin: 15px;
+    }
+    .text {
+      margin: auto;
+      text-align: center;
+    }
+    h1 {
+      margin: auto;
+      text-align: center;
+    }
+    .planetDesc {
+      text-align: center;
+      margin: auto;
+    }
+    hr {
+      margin: 30px auto;
+    }
+    .distance {
+      display: block;
+      margin: auto;
+      text-align: center;
+    }
+    .avg {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dest-bg {
+    background: url(/assets/destination/background-destination-mobile.jpg)
+      no-repeat center center fixed;
+    background-size: cover;
+  }
+  .nav {
+    display: none;
+  }
+  .container-dest {
+    font-family: 'Space Mono', monospace;
+    display: block !important;
+    margin: auto;
+    .imgPlanet {
+      margin-left: 50px auto !important;
+      background-size: 90% !important;
+      background-position-x: 50%;
+    }
+    .choose {
+      display: block;
+      text-align: center;
+      padding: 0;
+    }
+    .choosePlanet {
+      text-align: center;
+    }
+    .choosePlanet button {
+      text-transform: uppercase;
+      color: $color-fontColor-h1;
+      background: transparent;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      margin: 15px;
+    }
+    .text {
+      margin: auto;
+      text-align: center;
+    }
+    h1 {
+      margin: auto;
+      text-align: center;
+    }
+    .planetDesc {
+      text-align: center;
+      margin: auto;
+    }
+    hr {
+      margin: 30px auto;
+    }
+    .distance {
+      display: block;
+      margin: auto;
+      text-align: center;
+    }
+    .avg {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+}

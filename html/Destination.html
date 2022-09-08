@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dir/main.css" />
+    <title>Destination</title>
+  </head>
+  <body class="dest-bg">
+    <header class="header">
+      <img src="../assets/shared/logo.svg" alt="" />
+      <nav class="nav">
+        <ul>
+          <li class="home"><a href="./Home.html" id="home">00 HOME </a></li>
+          <li class="destination active">
+            <a href="./Destination.html" id="destination">01 DESTINATION</a>
+          </li>
+          <li class="crew"><a href="./Crew.html" id="crew">02 CREW</a></li>
+          <li class="technology">
+            <a href="./Technology.html" id="technology">03 TECHNOLOGY</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
+    </header>
+    <div class="container-dest">
+      <div class="choose">
+        <span class="one"> 01 </span> Pick your destination
+        <div class="imgPlanet"></div>
+      </div>
+
+      <div class="description">
+        <div class="choosePlanet">
+          <button class="btn btnMoon planet__active" id="Moon">Moon</button>
+          <button class="btn btnMars" id="Mars">Mars</button>
+          <button class="btn btnEuropa" id="Europa">Europa</button>
+          <button class="btn btnTitan" id="Titan">Titan</button>
+        </div>
+        <div class="text">
+          <h1>MOON</h1>
+          <p class="planetDesc">
+            See our planet as you've never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you're there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </p>
+          <hr />
+          <div class="distance">
+            <div class="avg">
+              <div class="title">AVG. DISTANCE</div>
+              <div class="value">384,400 KM</div>
+            </div>
+            <div class="time">
+              <div class="title">EST. TRAVEL TIME</div>
+              <div class="value">3 DAYS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script defer src="../src/app.js"></script>
+  </body>
+</html>
